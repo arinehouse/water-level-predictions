@@ -40,4 +40,4 @@ N.B. You do not need to run `gather_data.py`; the data is already included in th
 [Adam Rinehouse](https://github.com/arinehouse)
 
 ### Acknowledgements
-Thanks to NOAA CO-OPTS for their excellent [API](https://tidesandcurrents.noaa.gov/api/).
+Thanks to NOAA for their excellent [CO-OPS API](https://tidesandcurrents.noaa.gov/api/).
