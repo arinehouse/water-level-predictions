@@ -2,6 +2,7 @@ import pickle
 import sys
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
+import numpy as np
 
 # load the data from the pickled storage file
 with open(sys.argv[1], 'rb') as datafile:
@@ -20,6 +21,8 @@ with open('20120101.pkl', 'rb') as datafile:
 
 predictions = reg.predict(test_data[:,:-1])
 ground_truth = test_data[:,-1]
+print(np.mean(predictions))
+print(np.std(predictions))
 
 # determine loss with R^2 regression score
 r2 = r2_score(ground_truth, predictions)
