@@ -3,7 +3,7 @@ import sys
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 
-# load the data into a pandas dataframe
+# load the data from the pickled storage file
 with open(sys.argv[1], 'rb') as datafile:
     data = pickle.load(datafile)
 
